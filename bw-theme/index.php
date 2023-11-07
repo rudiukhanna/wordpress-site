@@ -120,19 +120,32 @@
  <div class="contact" id="contact">
     <div class="container">
         <div class="block__head">
-            <h2 class="block__title">Contact Us</h2>
-            <p class="block__text">We know what we need to do</p>
+            <h2 class="block__title"><?=CFS()->get('footer_title') ?></h2>
+            <p class="block__text"><?=CFS()->get('footer_text') ?></p>
         </div>
         <div class="contact__inner">
 
             <div class="contact__icon-box">
                 <div class="contact__item">
                     <i class="icon-phone"></i>
-                    <div class="contact__text"><a href="tel:555-222-333">555-222-333</a></div>
+                    <div class="contact__text"><a href="tel:<?=CFS()->get('footer_phone') ?>"><?=CFS()->get('footer_phone') ?></a></div>
                 </div>
                 <div class="contact__item">
                     <i class="icon-location"></i>
-                    <div class="contact__text"><a href="https://maps.app.goo.gl/CvhGjNTij4wUPvNC9" target="_blank">Here is some address</a></div>
+                    <div class="contact__text">
+                        <a href="https://maps.app.goo.gl/CvhGjNTij4wUPvNC9" target="_blank">
+                             <?php 
+                                    if(!empty(CFS()->get('footer_address')['url'])) {
+                                        ?>
+                                        <a  
+                                            href="<?= CFS()->get('footer_address')['url']?>"
+                                            target="<?= CFS()->get('footer_address')['target'] ?>">
+                                            <?= CFS()->get('footer_address')['text']?>
+                                        </a>
+                                        <?php
+                                    }
+                              ?>
+                        </a></div>
                 </div>
                 <div class="contact__item">
                     <i class="icon-mail-alt"></i>
