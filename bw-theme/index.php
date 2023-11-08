@@ -149,18 +149,11 @@
                 </div>
                 <div class="contact__item">
                     <i class="icon-mail-alt"></i>
-                    <div class="contact__text"><a href="mailto:somemail@hotmail.com">somemail@hotmail.com</a></div>
+                    <div class="contact__text"><a href="mailto:<?=CFS()->get('footer_email') ?>"><?=CFS()->get('footer_email') ?></a></div>
                 </div>
             </div>
        
-            <form action="" class="contact__form">
-                <input class="contact__name" type="text" placeholder="Full Name">
-                <input class="contact__email" type="email" placeholder="Email">
-                <input class="contact__number" type="number" placeholder="Number">
-                <textarea class="contact__textarea" placeholder="Write your Message here..."></textarea>
-                <input class="contact__button" type="submit" value="Submit"></input>
-            </form>
-            
+             <?php the_content(); ?>
         </div>
     </div>
 </div>

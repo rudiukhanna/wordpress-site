@@ -338,7 +338,8 @@ Version: 1.9
     text-decoration: underline;
 }
 
-.contact__form input {
+.wpcf7-form input {
+    width: 100%;
     padding: 20px;
     height: 52px;
     text-align: center;
@@ -350,7 +351,7 @@ Version: 1.9
     border: 1px solid #999999;
 }
 
-.contact__form {
+.wpcf7-form {
     margin: 0 auto;
     padding-top: 153px;
     display: flex;
@@ -358,15 +359,15 @@ Version: 1.9
     max-width: 770px;
 }
 
-.contact__name {
+.wpcf7-form .contact__name {
     margin-bottom: 20px; 
 }
 
-.contact__email {
+.wpcf7-form .contact__email {
     margin-bottom: 20px;
 }
 
-.contact__number {
+.wpcf7-form .contact__number {
     margin-bottom: 18px;
 }
 
@@ -379,7 +380,8 @@ input[type='number'] {
     -moz-appearance: textfield;
 }
 
-.contact__textarea {
+.wpcf7-form .contact__textarea {
+    width: 100%;
     margin-bottom: 21px;
     padding: 22px;
     height: 195px;
@@ -392,7 +394,8 @@ input[type='number'] {
     border: 1px solid #999999;
 }
 
-.contact__form .contact__button {
+.wpcf7-form .contact__button {
+    width: 100%;
     padding: 0;
     outline: none;
     border: none;
